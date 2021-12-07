@@ -1,0 +1,94 @@
+{
+    "info": {
+        "_postman_id": "969cf20d-3998-4569-87d0-8bf47df2d600",
+        "name": "0_Collection1",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Sample endpoint: Returns details about a particular user",
+            "id": "ba66fc2c-c25e-4a6e-a25e-c88c4edca0e7",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [
+                    {
+                        "key": "",
+                        "value": "sdcdscsdc",
+                        "type": "text"
+                    }
+                ],
+                "url": {
+                    "raw": "{{baseUrl}}/user?id=83237249",
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "path": [
+                        "user"
+                    ],
+                    "query": [
+                        {
+                            "key": "id",
+                            "value": "83237249",
+                            "description": "(Required) ID of the user"
+                        }
+                    ]
+                }
+            },
+            "response": []
+        },
+        {
+            "name": "Sample request 2",
+            "id": "20935683-ed80-4817-a3ac-e0877f148f6c",
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": null
+            },
+            "response": [
+                {
+                    "id": "80c72956-ef76-4aee-a646-87fc6495afec",
+                    "name": "example 1",
+                    "originalRequest": {
+                        "method": "GET",
+                        "header": [],
+                        "url": null
+                    },
+                    "_postman_previewlanguage": null,
+                    "header": null,
+                    "cookie": [],
+                    "responseTime": null,
+                    "body": null
+                }
+            ]
+        }
+    ],
+    "auth": {
+        "type": "basic",
+        "basic": [
+            {
+                "key": "username",
+                "value": "<Basic Auth Username>",
+                "type": "string"
+            },
+            {
+                "key": "password",
+                "value": "<Basic Auth Password>",
+                "type": "string"
+            }
+        ]
+    },
+    "variable": [
+        {
+            "id": "32e55fdd-8eb6-4974-963f-5ebec83cdfe5",
+            "key": "baseUrl",
+            "value": "https://petstore.swagger.io/v1",
+            "type": "string"
+        }
+    ]
+}
